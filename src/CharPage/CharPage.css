@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap');
 
 .CharPage {
+  min-width: 320px;
   text-align: center;
   background-color: #2d2d2e;
   color: #F8C471;
   font-family: 'Commissioner', sans-serif;
+  display: flex;
 }
 
 .CharPage img {
@@ -12,10 +14,12 @@
   height:auto;
   width: 100%;
   filter: grayscale();
+  object-fit: contain;
 }
 
 .CharPage .image-container {
-  margin-top: 10px;
+  max-height: 90vh;
+  align-self: center;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -24,7 +28,8 @@
 }
 
 .CharPage .main-info {
-  position: absolute;;
+  text-shadow: 2px 2px 2px #101213;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -37,9 +42,57 @@
   align-items: center;
 }
 
+.Armory {
+  background-color: #101213;
+  margin-top: 10px;
+  padding: 10px;
+  width: 45%;
+  margin: 2%;
+  border-radius: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.CharPage ul {
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.CharPage ul li {
+  padding: 1em 0;
+  border-bottom: 1px solid #F8C471;
+}
+
+.hp, .sp, .mp {
+  box-shadow: 0 0 1px #F8C471;
+  border-style: solid;
+  width: 6em;
+  margin-bottom: .4em;
+}
+
+.hp {
+  background: linear-gradient(90deg, rgba(56,7,7,1) 0%, rgba(121,9,9,1) 50%, rgba(56,7,7,1) 100%);
+  }
+  
+.mp {
+  background: linear-gradient(90deg, rgba(5,9,48,1) 0%, rgba(27,33,122,1) 50%, rgba(5,9,48,1) 100%);
+  }
+  
+.sp {
+  background: linear-gradient(90deg, rgba(5,41,6,1) 0%, rgba(24,122,33,1) 50%, rgba(5,41,6,1) 100%);
+  }
 
 @media (max-width: 768px) {
-  .CharPage .image-container {
+  .CharPage {
+    flex-direction: column;
+  }
+
+  .CharPage .image-container, .Armory {
     width: 90%;
     margin: auto;
     margin-top: 10px;

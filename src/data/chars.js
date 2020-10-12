@@ -17,16 +17,16 @@ export const charData = [
         },
     "armor":
         {
-            "head_slot": "Hunding's Rage Head",
-            "shoulder_slot": "Hunding's Rage Shoulders",
-            "body_slot": "Hunding's Rage Body",
-            "waist_slot": "Hunding's Rage Waist",
-            "hand_slot": "Hunding's Rage Hands",
-            "leg_slot": "Leviathan Legs",
-            "boot_slot": "Leviathan Boots",
-            "ring_1": "Leviathan Ring",
-            "ring_2": "Leviathan Ring",
-            "neck_slot": "Leviathan Necklace"
+            "head_slot": 1,
+            "shoulder_slot": 1,
+            "body_slot": 1,
+            "waist_slot": 1,
+            "hand_slot": 1,
+            "leg_slot": 2,
+            "boot_slot": 2,
+            "ring_1": 2,
+            "ring_2": 2,
+            "neck_slot": 2
         }
 
 },
@@ -47,16 +47,16 @@ export const charData = [
         },
     "armor":
         {
-            "head_slot": "Burning Spellweave Head",
-            "shoulder_slot": "Burning Spellweave Shoulders",
-            "body_slot": "Burning Spellweave Body",
-            "waist_slot": "Burning Spellweave Waist",
-            "hand_slot": "Burning Spellweave Hands",
-            "leg_slot": "Mother's Sorrow Legs",
-            "boot_slot": "Burning Spellweave Boots",
-            "ring_1": "Mother's Sorrow Ring",
-            "ring_2": "Mother's Sorrow Ring",
-            "neck_slot": "Mother's Sorrow Necklace"
+            "head_slot": 3,
+            "shoulder_slot": 3,
+            "body_slot": 3,
+            "waist_slot": 3,
+            "hand_slot": 3,
+            "leg_slot": 4,
+            "boot_slot": 3,
+            "ring_1": 4,
+            "ring_2": 4,
+            "neck_slot": 4
         }
 }, 
 
@@ -77,16 +77,16 @@ export const charData = [
         },
     "armor":
         {
-            "head_slot": "Hunding's Rage Head",
-            "shoulder_slot": "Hunding's Rage Shoulders",
-            "body_slot": "Hunding's Rage Body",
-            "waist_slot": "Hunding's Rage Waist",
-            "hand_slot": "Hunding's Rage Hands",
-            "leg_slot": "Leviathan Legs",
-            "boot_slot": "Leviathan Boots",
-            "ring_1": "Leviathan Ring",
-            "ring_2": "Leviathan Ring",
-            "neck_slot": "Leviathan Necklace"
+            "head_slot": 1,
+            "shoulder_slot": 1,
+            "body_slot": 1,
+            "waist_slot": 1,
+            "hand_slot": 1,
+            "leg_slot": 2,
+            "boot_slot": 2,
+            "ring_1": 2,
+            "ring_2": 2,
+            "neck_slot": 2
         }
 },
 
@@ -107,16 +107,16 @@ export const charData = [
         },
     "armor":
         {
-            "head_slot": "Hunding's Rage Head",
-            "shoulder_slot": "Hunding's Rage Shoulders",
-            "body_slot": "Hunding's Rage Body",
-            "waist_slot": "Hunding's Rage Waist",
-            "hand_slot": "Hunding's Rage Hands",
-            "leg_slot": "Leviathan Legs",
-            "boot_slot": "Leviathan Boots",
-            "ring_1": "Leviathan Ring",
-            "ring_2": "Leviathan Ring",
-            "neck_slot": "Leviathan Necklace"
+            "head_slot": 1,
+            "shoulder_slot": 1,
+            "body_slot": 1,
+            "waist_slot": 1,
+            "hand_slot": 1,
+            "leg_slot": 2,
+            "boot_slot": 2,
+            "ring_1": 2,
+            "ring_2": 2,
+            "neck_slot": 2
         }
 }
 ]

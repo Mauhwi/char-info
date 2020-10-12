@@ -32,7 +32,7 @@ nav > * {
   min-width: 320px;
   max-width: 480px;
   margin: 20px;
-  background-color: #101213;;
+  background-color: #101213;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
