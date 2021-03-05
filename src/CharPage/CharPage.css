@@ -2,11 +2,20 @@
 
 .CharPage {
   min-width: 320px;
+  max-width: 1600px;
   text-align: center;
   background-color: #2d2d2e;
   color: #F8C471;
   font-family: 'Commissioner', sans-serif;
   display: flex;
+  margin: auto;
+}
+
+.CharPage .container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 2%;
 }
 
 .CharPage img {
@@ -23,8 +32,6 @@
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  width: 45%;
-  margin: 2%;
 }
 
 .CharPage .main-info {
@@ -42,6 +49,25 @@
   align-items: center;
 }
 
+.CharPage .hp, .sp, .mp {
+  box-shadow: 0 0 1px #F8C471;
+  border-style: solid;
+  width: 6em;
+  margin-bottom: .4em;
+}
+
+.CharPage .hp {
+  background: linear-gradient(90deg, rgba(56,7,7,1) 0%, rgba(121,9,9,1) 50%, rgba(56,7,7,1) 100%);
+}
+  
+.CharPage .mp {
+  background: linear-gradient(90deg, rgba(5,9,48,1) 0%, rgba(27,33,122,1) 50%, rgba(5,9,48,1) 100%);
+}
+  
+.CharPage .sp {
+  background: linear-gradient(90deg, rgba(5,41,6,1) 0%, rgba(24,122,33,1) 50%, rgba(5,41,6,1) 100%);
+}
+
 .Armory {
   background-color: #101213;
   margin-top: 10px;
@@ -54,7 +80,7 @@
   justify-content: center;
 }
 
-.CharPage ul {
+.Armory ul {
   list-style: none;
   padding: 0;
   width: 90%;
@@ -63,36 +89,38 @@
   justify-content: space-between;
 }
 
-.CharPage ul li {
+.Armory ul li {
   padding: 1em 0;
   border-bottom: 1px solid #F8C471;
+  cursor: pointer;
 }
 
-.hp, .sp, .mp {
-  box-shadow: 0 0 1px #F8C471;
-  border-style: solid;
-  width: 6em;
-  margin-bottom: .4em;
+.Armory ul li p {
+  pointer-events: none;
 }
 
-.hp {
-  background: linear-gradient(90deg, rgba(56,7,7,1) 0%, rgba(121,9,9,1) 50%, rgba(56,7,7,1) 100%);
-  }
-  
-.mp {
-  background: linear-gradient(90deg, rgba(5,9,48,1) 0%, rgba(27,33,122,1) 50%, rgba(5,9,48,1) 100%);
-  }
-  
-.sp {
-  background: linear-gradient(90deg, rgba(5,41,6,1) 0%, rgba(24,122,33,1) 50%, rgba(5,41,6,1) 100%);
-  }
 
-@media (max-width: 768px) {
+.Armory ul li .location {
+  visibility: hidden;
+  margin: 0;
+  height: 0;
+  line-height: 2.5em;
+  padding-top: 0.5em;
+  transition: height 0.5s, visibility 0.2s;
+}
+
+.Armory ul li.active .location {
+  height: 3em;
+  visibility: visible;
+  line-height: 2.5em;
+}
+
+@media (max-width: 800px) {
   .CharPage {
     flex-direction: column;
   }
 
-  .CharPage .image-container, .Armory {
+  .CharPage .container, .Armory {
     width: 90%;
     margin: auto;
     margin-top: 10px;

@@ -17,16 +17,64 @@ export const charData = [
         },
     "armor":
         {
-            "head_slot": 1,
-            "shoulder_slot": 1,
-            "body_slot": 1,
-            "waist_slot": 1,
-            "hand_slot": 1,
-            "leg_slot": 2,
-            "boot_slot": 2,
-            "ring_1": 2,
-            "ring_2": 2,
-            "neck_slot": 2
+            "head_slot": {
+                "id": 5,
+                "trait": "Divines",
+                "enchantment": "Stamina"
+            },
+            "shoulder_slot": {
+                "id": 5,
+                "trait": "Divines",
+                "enchantment": "Stamina"
+            },
+            "body_slot": {
+                "id": 1,
+                "trait": "Divines",
+                "enchantment": "Stamina"
+            },
+            "waist_slot": {
+                "id": 2,
+                "trait": "Divines",
+                "enchantment": "Stamina"
+            },
+            "hand_slot": {
+                "id": 2,
+                "trait": "Divines",
+                "enchantment": "Stamina"
+            },
+            "leg_slot": {
+                "id": 1,
+                "trait": "Divines",
+                "enchantment": "Stamina"
+            },
+            "boot_slot": {
+                "id": 1,
+                "trait": "Divines",
+                "enchantment": "Stamina"
+            },
+            "ring_1": {
+                "id": 2,
+                "trait": "Divines",
+                "enchantment": "Stamina"
+            },
+            "ring_2": {
+                "id": 2,
+                "trait": "Divines",
+                "enchantment": "Stamina"
+            },
+            "neck_slot": {
+                "id": 2,
+                "trait": "Divines",
+                "enchantment": "Stamina"
+            },
+        },
+    "skills": 
+        {
+            "skill_1": 1,
+            "skill_2": 2,
+            "skill_3": 3,
+            "skill_4": 4,
+            "skill_5": 5,
         }
 
 },

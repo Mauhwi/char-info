@@ -1,21 +1,31 @@
 [
     {
         "id": 1,
-        "name": "Hunding's Rage"
+        "name": "Hunding's Rage",
+        "location": "6-traits craft. Reaper's March "
     },
 
     {
         "id": 2,
-        "name": "Leviathan"
+        "name": "Spriggan's Thorns",
+        "location": "Overland. Bangkorai"
     },
 
     {
         "id": 3,
-        "name": "Burning Spellweave"
+        "name": "Burning Spellweave",
+        "location": "Dungeon. City of Ash"
     },
 
     {
         "id": 4,
-        "name": "Mother's Sorrow"
+        "name": "Mother's Sorrow",
+        "location": "Overland. Deshaan"
+    },
+    
+    {
+        "id": 5,
+        "name": "Selene",
+        "location":"VM Dungeon. Selene's Web"
     }
 ]
