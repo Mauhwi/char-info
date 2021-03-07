@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 .CharPage {
-  min-width: 320px;
+  min-width: 380px;
   max-width: 1600px;
   text-align: center;
   background-color: #2d2d2e;
@@ -16,9 +17,10 @@
   flex-direction: column;
   width: 45%;
   margin: 2%;
+  align-items: center;
 }
 
-.CharPage img {
+.CharPage .image-container img {
   display:block;
   height:auto;
   width: 100%;
@@ -50,7 +52,7 @@
 }
 
 .CharPage .hp, .sp, .mp {
-  box-shadow: 0 0 1px #F8C471;
+  box-shadow: 0 0 2px #72572c;
   border-style: solid;
   width: 6em;
   margin-bottom: .4em;
@@ -97,8 +99,17 @@
 
 .Armory ul li p {
   pointer-events: none;
+  display: flex;
+  justify-content: center;
 }
 
+.Armory ul li p span {
+  width: 20%;
+}
+
+.Armory ul li p span.armor {
+  width: 60%;
+}
 
 .Armory ul li .location {
   visibility: hidden;
@@ -115,7 +126,53 @@
   line-height: 2.5em;
 }
 
-@media (max-width: 800px) {
+.Skills ul {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.Skills li {
+  position: relative;
+}
+
+.Skills ul img {
+  margin: 4px;
+}
+
+.Skills .description {
+  position: absolute;
+  bottom: 102%;
+  left: -50%;
+  display: none;
+  min-width: 300px;
+  background-color: #1b1b1b;
+  padding: 10px;
+  border: solid 1px #F8C471;
+  border-radius: 4px;
+}
+
+.Skills .description p.name {
+  font-size: 1.2em;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid 1px #F8C471;
+  padding-bottom: 4px;
+}
+
+.Skills li.hover .description {
+  display: block;
+}
+
+.Skills .description span.physical {
+  color: red;
+}
+
+.Skills .description span.disease {
+  color: rgb(85, 146, 5);
+}
+
+@media (max-width: 900px) {
   .CharPage {
     flex-direction: column;
   }
@@ -124,5 +181,17 @@
     width: 90%;
     margin: auto;
     margin-top: 10px;
+  }
+
+  .Skills ul {
+    position: relative;
+  }
+  
+  .Skills li {
+    position: static;
+  }
+  
+  .Skills .description {
+    left: 0%;
   }
 }

@@ -13,7 +13,7 @@ function CharPage(props) {
                 <div className="image-container">
                     <img src={char.image_file}></img>
                     <div className="main-info">
-                        <p>{char.char_name}</p>
+                        <p className>{char.char_name}</p>
                         <div className="hp">{char.main_stats.hp}</div>
                         <div className="mp">{char.main_stats.mp}</div>
                         <div className="sp">{char.main_stats.sp}</div>

@@ -68,14 +68,23 @@ export const charData = [
                 "enchantment": "Stamina"
             },
         },
-    "skills": 
-        {
-            "skill_1": 1,
-            "skill_2": 2,
-            "skill_3": 3,
-            "skill_4": 4,
-            "skill_5": 5,
-        }
+    "skills": {
+            "first_bar": {
+                "skill_1": 1,
+                "skill_2": 2,
+                "skill_3": 3,
+                "skill_4": 4,
+                "skill_5": 5,
+            },
+            "second_bar": {
+                "skill_1": 1,
+                "skill_2": 2,
+                "skill_3": 3,
+                "skill_4": 4,
+                "skill_5": 5,
+            }
+    }
+    
 
 },
 //--------------------Necromancer------------------------ 
