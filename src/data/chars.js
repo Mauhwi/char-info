@@ -83,6 +83,61 @@ export const charData = [
                 "skill_4": 4,
                 "skill_5": 5,
             }
+    },
+    "champion_points": {
+        "warfare": {
+            "Precision": 40,
+            "Fighting Finesse": 50,
+            "Piercing": 40,
+            "Deadly Aim": 50,
+            "Thaumaturge": 50,
+            "Biting Aura": 50,
+            "Tireless Discipline": 40,
+            "Battle Mastery": 40,
+            "Mighty": 30,
+            "Quick Recovery": 40,
+            "Preparation": 40,
+            "Elemental Aegis": 40,
+            "Hardy": 40,
+            "Blessed": 40,
+            "Eldritch Insight": 40,
+            "Flawless Ritual": 40,
+            "War Mage": 30
+        },
+        "fitness": {
+            "Boundless Vitality": 50,
+            "Rejuvenation": 50,
+            "Tumbling": 45,
+            "Mystic Tenacity": 10,
+            "Hero’s Vigor": 40,
+            "Bloody Renewal": 50,
+            "Ironclad": 50,
+            "Defiance": 40,
+            "Hasty": 32,
+            "Tireless Guardian": 40,
+            "Fortification": 45,
+            "Sprinter": 40,
+            "Nimble Protector": 15,
+            "Savage Defense": 45,
+            "Bashing Brutality": 40,
+            "Survival Instincts": 10,
+            "Tempered Soul": 125
+        },
+        "craft": {
+            "Steed’s Blessing": 50,
+            "Breakfall": 50,
+            "Wanderer": 75,
+            "Steadfast Enchantment": 50,
+            "Rationer": 30, 
+            "Liquid Efficiency": 75, 
+            "Fortune’s Favor": 50,
+            "Gilded Fingers": 50,
+            "Out of Sight": 30,
+            "Fleet Phantom": 40,
+            "Soul Reservoir": 33,
+            "Treasure Hunter": 50,
+            "Inspiration Boost": 45
+        }
     }
     
 

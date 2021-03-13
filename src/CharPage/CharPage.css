@@ -4,12 +4,18 @@
 .CharPage {
   min-width: 380px;
   max-width: 1600px;
+  width: 100%;
   text-align: center;
   background-color: #2d2d2e;
   color: #F8C471;
   font-family: 'Commissioner', sans-serif;
   display: flex;
+  flex-direction: column;
   margin: auto;
+}
+
+.CharPage .horizontal-container {
+  display: flex;
 }
 
 .CharPage .container {
@@ -172,8 +178,62 @@
   color: rgb(85, 146, 5);
 }
 
+.Champion {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2%;
+  min-width: 380px;
+  width: 100%;
+  justify-content: center;
+}
+
+.Champion .tree {
+  min-width: 380px;
+  max-width: 700px;
+  margin: 20px;
+  border-radius: 4px;
+  flex: 1; 
+}
+
+.Champion .warfare {
+  background: center no-repeat url("../images/warfare-eso-constellations-wiki-guide.jpg");
+}
+.Champion .fitness {
+  background: center no-repeat url("../images/fitness-eso-constellations-wiki-guide2.jpg");
+}
+.Champion .craft {
+  background: center no-repeat url("../images/craft-eso-constellations-wiki-guide.jpg");
+}
+
+.Champion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+}
+
+.Champion li {
+  padding: 10px;
+  background-color: #0a0c0cf1;
+  margin: 8px;
+  display: flex;
+  border-radius: 2px;
+  /* margin-left: 12px;
+  margin-right: 12px; */
+  /* border-bottom: solid 1px #F8C471; */
+}
+
+.Champion li span:first-of-type {
+  width: 70%;
+}
+
+.Champion li span:last-of-type {
+  width: 30%;
+}
+
 @media (max-width: 900px) {
-  .CharPage {
+  .CharPage .horizontal-container {
     flex-direction: column;
   }
 
