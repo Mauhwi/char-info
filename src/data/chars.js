@@ -9,6 +9,7 @@ export const charData = [
     "weapon1": "Dual-wield",
     "weapon2": "Bow",
     "image_file": require("../images/cat.png"),
+    "mundus": "The Thief",
     "main_stats": 
         {
             "hp": 0,
@@ -19,69 +20,99 @@ export const charData = [
         {
             "head_slot": {
                 "id": 5,
+                "type": "Head",
                 "trait": "Divines",
                 "enchantment": "Stamina"
             },
             "shoulder_slot": {
                 "id": 5,
+                "type": "Shoulders",
                 "trait": "Divines",
                 "enchantment": "Stamina"
             },
             "body_slot": {
                 "id": 1,
+                "type": "Body",
                 "trait": "Divines",
                 "enchantment": "Stamina"
             },
             "waist_slot": {
                 "id": 2,
+                "type": "Waist",
                 "trait": "Divines",
                 "enchantment": "Stamina"
             },
             "hand_slot": {
                 "id": 2,
+                "type": "Hands",
                 "trait": "Divines",
                 "enchantment": "Stamina"
             },
             "leg_slot": {
                 "id": 1,
+                "type": "Pants",
                 "trait": "Divines",
                 "enchantment": "Stamina"
             },
             "boot_slot": {
                 "id": 1,
+                "type": "Boots",
                 "trait": "Divines",
                 "enchantment": "Stamina"
             },
             "ring_1": {
                 "id": 2,
-                "trait": "Divines",
-                "enchantment": "Stamina"
+                "type": "Ring",
+                "trait": "Robust",
+                "enchantment": "Weapon Damage"
             },
             "ring_2": {
                 "id": 2,
-                "trait": "Divines",
-                "enchantment": "Stamina"
+                "type": "Ring",
+                "trait": "Robust",
+                "enchantment": "Weapon Damage"
             },
             "neck_slot": {
                 "id": 2,
-                "trait": "Divines",
-                "enchantment": "Stamina"
+                "type": "Necklace",
+                "trait": "Robust",
+                "enchantment": "Weapon Damage"
             },
+            "weapon_1": {
+                "id": 1,
+                "trait": "Nirnhoned",
+                "type": "Dagger",
+                "enchantment": "Poison Damage"
+            },
+            "weapon_2": {
+                "id": 1,
+                "type": "Dagger",
+                "trait": "Precise",
+                "enchantment": "Absorb Stamina"
+            },
+            "weapon_3": {
+                "id": 1,
+                "trait": "Infused",
+                "type": "Bow",
+                "enchantment": "Weapon Damage"
+            }          
         },
     "skills": {
             "first_bar": {
                 "skill_1": 1,
-                "skill_2": 2,
-                "skill_3": 3,
-                "skill_4": 4,
+                "skill_2": 4,
+                "skill_3": 2,
+                "skill_4": 6,
                 "skill_5": 5,
+                "skill_6": 3
             },
             "second_bar": {
-                "skill_1": 1,
-                "skill_2": 2,
-                "skill_3": 3,
-                "skill_4": 4,
-                "skill_5": 5,
+                "skill_1": 11,
+                "skill_2": 10,
+                "skill_3": 8,
+                "skill_4": 7,
+                "skill_5": 1,
+                "skill_6": 9
             }
     },
     "champion_points": {

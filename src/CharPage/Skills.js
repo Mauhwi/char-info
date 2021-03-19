@@ -26,15 +26,24 @@ function Skills({char}) {
             <div className="first-bar">
                 <ul> 
                     {Object.values(char.skills.first_bar).map((charSkill) => {
-                    return <li onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
-                        <img className="skill-image" src={findSkill(charSkill).image}></img>
+                        let skill = findSkill(charSkill);
+                        let type = skill.type;
+                        return <li onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+                        <img className="skill-image" src={skill.image}></img>
                         <div className="description">
-                            {/* TODO: can probably just write actual html in json for this?? */}
-                            <p className="name">{findSkill(charSkill).skill_name}</p>
+                            <p className="name">{skill.skill_name}</p>
                             <p>
-                                <span>{findSkill(charSkill).description_1}</span>
-                                <span className={findSkill(charSkill).type}>{findSkill(charSkill).damage_text}</span>
-                                <span>{findSkill(charSkill).description_2}</span>
+                                {Object.entries(skill).map((info) => {
+                                    if (info[0].includes('damage_text')) {
+                                        return <span className={
+                                                type.includes('physical') ? 'physical' 
+                                                : (type.includes('disease') ? 'disease' : '')}>
+                                            {info[1]}</span>
+                                    } else if (info[0].includes('description')) {
+                                        return <span>{info[1]}</span>
+                                    }
+                                })
+                                }
                             </p>
                         </div>    
                     </li>
@@ -42,16 +51,24 @@ function Skills({char}) {
                 </ul>
                 
                 <ul> 
-                    {Object.values(char.skills.first_bar).map((charSkill) => {
-                    return <li onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+                    {Object.values(char.skills.second_bar).map((charSkill) => {
+                        let type = findSkill(charSkill).type;
+                        return <li onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
                         <img className="skill-image" src={findSkill(charSkill).image}></img>
                         <div className="description">
-                            {/* TODO: can probably just write actual html in json for this?? */}
                             <p className="name">{findSkill(charSkill).skill_name}</p>
                             <p>
-                                <span>{findSkill(charSkill).description_1}</span>
-                                <span className={findSkill(charSkill).type}>{findSkill(charSkill).damage_text}</span>
-                                <span>{findSkill(charSkill).description_2}</span>
+                                {Object.entries(findSkill(charSkill)).map((info) => {
+                                    if (info[0].includes('damage_text')) {
+                                        return <span className={
+                                                type.includes('physical') ? 'physical' 
+                                                : (type.includes('disease') ? 'disease' : '')}>
+                                            {info[1]}</span>
+                                    } else if (info[0].includes('description')) {
+                                        return <span>{info[1]}</span>
+                                    }
+                                })
+                                }
                             </p>
                         </div>    
                     </li>

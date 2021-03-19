@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
 
 .CharPage {
   min-width: 380px;
@@ -50,7 +52,7 @@
   transform: translate(-50%, -50%);
   color: #F8C471;
   padding: .5rem 1rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
   display: flex;
   flex-direction: column;
@@ -76,60 +78,31 @@
   background: linear-gradient(90deg, rgba(5,41,6,1) 0%, rgba(24,122,33,1) 50%, rgba(5,41,6,1) 100%);
 }
 
-.Armory {
-  background-color: #101213;
-  margin-top: 10px;
+
+.CharPage .mundus, .Skills {
+  width: 96%;
+  max-width: 600px;
+  background-color: #101213ea;
+  margin-top: 20px;
   padding: 10px;
-  width: 45%;
-  margin: 2%;
-  border-radius: 10px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
+  border: solid 1px #F8C471;
+  border-radius: 6px;
 }
 
-.Armory ul {
-  list-style: none;
-  padding: 0;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.CharPage .mundus {
+  background: url("../images/mundus-bg.png") #0d0f0f;
+  background-position:50% 50%;  /* Sets reference point to scale from */
+  background-size:cover; 
 }
 
-.Armory ul li {
-  padding: 1em 0;
-  border-bottom: 1px solid #F8C471;
-  cursor: pointer;
+.CharPage .mundus p {
+  font-family: 'Redressed', cursive;
+  font-size: 2rem;
 }
 
-.Armory ul li p {
-  pointer-events: none;
+.Skills {
   display: flex;
   justify-content: center;
-}
-
-.Armory ul li p span {
-  width: 20%;
-}
-
-.Armory ul li p span.armor {
-  width: 60%;
-}
-
-.Armory ul li .location {
-  visibility: hidden;
-  margin: 0;
-  height: 0;
-  line-height: 2.5em;
-  padding-top: 0.5em;
-  transition: height 0.5s, visibility 0.2s;
-}
-
-.Armory ul li.active .location {
-  height: 3em;
-  visibility: visible;
-  line-height: 2.5em;
 }
 
 .Skills ul {
@@ -141,10 +114,13 @@
 
 .Skills li {
   position: relative;
+  margin: 4px;
 }
 
 .Skills ul img {
-  margin: 4px;
+  max-width: 100%;
+  min-width: 50%;
+  pointer-events: none;
 }
 
 .Skills .description {
@@ -178,10 +154,69 @@
   color: rgb(85, 146, 5);
 }
 
+.Armory {
+  background-color: #101213;
+  margin-top: 10px;
+  padding: 10px;
+  width: 45%;
+  margin: 2%;
+  border-radius: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.Armory ul {
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Armory ul li {
+  padding: 1em 0;
+  border-bottom: 1px solid #F8C471;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.Armory ul li p {
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+
+.Armory ul li p span {
+  width: 20%;
+}
+
+.Armory ul li p span.armor {
+  width: 60%;
+}
+
+.Armory ul li .location {
+  visibility: hidden;
+  margin: 0;
+  height: 0;
+  line-height: 2.5em;
+  padding-top: 0.5em;
+  transition: height 0.5s, visibility 0.2s;
+}
+
+.Armory ul li.active .location {
+  height: 3em;
+  visibility: visible;
+  line-height: 2.5em;
+}
+
+
 .Champion {
   display: flex;
   flex-wrap: wrap;
-  margin: 2%;
+  margin-right: 2%;
+  margin-left: 2%;
   min-width: 380px;
   width: 100%;
   justify-content: center;
@@ -232,7 +267,7 @@
   width: 30%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1280px) {
   .CharPage .horizontal-container {
     flex-direction: column;
   }
@@ -243,15 +278,34 @@
     margin-top: 10px;
   }
 
+  .Armory {
+    margin-top: 20px;
+    max-width: 700px;
+  }
+
+  .Armory ul li p span {
+    width: 25%;
+  }
+  
+  .Armory ul li p span.armor {
+    width: 50%;
+  }
+
   .Skills ul {
     position: relative;
+    max-width: 100%;
   }
   
   .Skills li {
     position: static;
+    margin: 2px;
   }
   
   .Skills .description {
     left: 0%;
+  }
+
+  .Champion {
+    max-width: 96%;
   }
 }

@@ -21,6 +21,10 @@ function CharPage(props) {
                             <div className="sp">{char.main_stats.sp}</div>
                         </div>
                     </div>
+                    <div className="mundus">
+                        <img src="https://elderscrollsonline.wiki.fextralife.com/file/Elder-Scrolls-Online/mundus_stone_the_thief.jpg"></img>
+                        <p>{char.mundus}</p>
+                    </div>
                     <Skills char={char}/>
                 </div>
 

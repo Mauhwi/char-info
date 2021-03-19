@@ -34,7 +34,15 @@ function Armory({char}) {
     return (
         <div className='Armory'>
             <ul>
-                <li onClick={handleClick}>
+                {Object.values(char.armor).map((armor) => {                
+                        return <li onClick={handleClick}>
+                            <p><span class="armor">{GetArmor(armor.id)} <span>{armor.type}</span></span><span>{armor.trait}</span><span>{armor.enchantment}</span></p>
+                            <p className="location">{GetLocation(armor.id)}</p>
+                        </li>
+                    
+                })}
+
+                {/* <li onClick={handleClick}>
                     <p><span class="armor">{GetArmor(char.armor.head_slot.id)} Head</span><span>{char.armor.head_slot.trait}</span><span>{char.armor.head_slot.enchantment}</span></p>
                     <p className="location">{GetLocation(char.armor.head_slot.id)}</p>
                 </li>
@@ -73,7 +81,7 @@ function Armory({char}) {
                 <li onClick={handleClick}>
                     <p><span class="armor">{GetArmor(char.armor.neck_slot.id)} Neck</span><span>{char.armor.head_slot.trait}</span><span>{char.armor.head_slot.enchantment}</span></p>
                     <p className="location">{GetLocation(char.armor.neck_slot.id)}</p>
-                </li>
+                </li> */}
             </ul>
         </div>
     )
