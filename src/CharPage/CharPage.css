@@ -151,7 +151,15 @@
 }
 
 .Skills .description span.disease {
-  color: rgb(85, 146, 5);
+  color: rgb(145, 160, 12);
+}
+
+.Skills .description span.poison {
+  color: rgb(91, 160, 12);
+}
+
+.Skills .description span.magic {
+  color: rgb(41, 123, 190);
 }
 
 .Armory {

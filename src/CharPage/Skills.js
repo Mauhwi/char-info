@@ -37,7 +37,9 @@ function Skills({char}) {
                                     if (info[0].includes('damage_text')) {
                                         return <span className={
                                                 type.includes('physical') ? 'physical' 
-                                                : (type.includes('disease') ? 'disease' : '')}>
+                                                : (type.includes('disease') ? 'disease' 
+                                                : (type.includes('poison') ? 'poison' 
+                                                : (type.includes('magic') ? 'magic' : '')))}>
                                             {info[1]}</span>
                                     } else if (info[0].includes('description')) {
                                         return <span>{info[1]}</span>
@@ -61,8 +63,10 @@ function Skills({char}) {
                                 {Object.entries(findSkill(charSkill)).map((info) => {
                                     if (info[0].includes('damage_text')) {
                                         return <span className={
-                                                type.includes('physical') ? 'physical' 
-                                                : (type.includes('disease') ? 'disease' : '')}>
+                                            type.includes('physical') ? 'physical' 
+                                            : (type.includes('disease') ? 'disease' 
+                                            : (type.includes('poison') ? 'poison' 
+                                            : (type.includes('magic') ? 'magic' : '')))}>
                                             {info[1]}</span>
                                     } else if (info[0].includes('description')) {
                                         return <span>{info[1]}</span>
